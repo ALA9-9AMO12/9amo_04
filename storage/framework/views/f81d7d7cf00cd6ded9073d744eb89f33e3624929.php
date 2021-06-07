@@ -4,7 +4,7 @@
 
 
     <!-- Scripts -->
-    <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <html lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
 <head>
         <meta charset="utf-8">
 
@@ -32,3 +32,4 @@
 
     </html>
 
+<?php /**PATH /Applications/XAMPP/xamppfiles/htdocs/9amo_04/resources/views/contact.blade.php ENDPATH**/ ?>
