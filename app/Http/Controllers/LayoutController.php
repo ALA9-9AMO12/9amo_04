@@ -8,7 +8,7 @@ class LayoutController extends Controller
 {
      Public function layout()
      {
-         return view(view:'layout');
+         return view(\'layout');
      }
     //
 }
