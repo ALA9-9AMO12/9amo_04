@@ -11,3 +11,4 @@
             <li><a href="#">Page 3</a></li>
         </ul>
     </div>
+<?php /**PATH /Applications/XAMPP/xamppfiles/htdocs/9amo_04/resources/views/nav.blade.php ENDPATH**/ ?>
