@@ -13,6 +13,28 @@
 
 <body>
 <?php echo $__env->make('nav', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+<div class="topnav-centered">
+    <a href="#home" class="active"><img src="/img/imgpsh_mobile_save.jpg" alt="imgpsh_mobile_save" width="78" height="48"></a>
+</div>
+
+<!-- Left-aligned links (default) -->
+<a href="#">Home</a>
+<a href="#">Artikelen</a>
+<a href="#">Cursusen</a>
+<a href="#">Informatie</a>
+
+<!-- Right-aligned links -->
+<div class="topnav-right">
+    <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    <a href="#"><i class="fa fa-fw fa-search"></i>Search</a>
+    <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+
+</div>
+
+
+
+
+
 <h1>test test</h1>
 <?php echo $__env->yieldContent('content'); ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
