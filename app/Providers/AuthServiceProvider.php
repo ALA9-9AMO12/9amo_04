@@ -26,10 +26,6 @@ class AuthServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerPolicies();
-
-        Gate::define('tasks_create', function (User $user) {
-            return $user->role_id == Role::IS_HEAD_ADMIN;
-        });
         //
     }
 }
