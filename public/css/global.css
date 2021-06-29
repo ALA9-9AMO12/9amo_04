@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+/* Bootstrap 5 Overwrite */
+.form-control:focus {
+    border-color: #ffc107 !important;
+    box-shadow: 0 0 0 .25rem rgba(255, 202, 44, .25) !important;
+}
