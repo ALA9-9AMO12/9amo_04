@@ -2,7 +2,6 @@
 
 use App\Role;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
 class RoleSeeder extends Seeder
 {
@@ -13,14 +12,19 @@ class RoleSeeder extends Seeder
      */
     public function run()
     {
-//        DB::table('roles')->insert([
-//            ['name' => 'User'],
-//            ['name' => 'Admin'],
-//            ['name' => 'Head Admin']
-//        ]);
+        /**
+         * Use Role::create so that Laravel uses Eloquent
+         */
+        Role::create([
+            'name' => 'User'
+        ]);
 
-        Role::create(['name' => 'User']);
-        Role::create(['name' => 'Admin']);
-        Role::create(['name' => 'Head Admin']);
+        Role::create([
+            'name' => 'Admin'
+        ]);
+
+        Role::create([
+            'name' => 'Head Admin'
+        ]);
     }
 }
