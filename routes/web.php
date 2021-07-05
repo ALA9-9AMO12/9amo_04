@@ -15,7 +15,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@index')->name('home');
-Route::get('/dashboard', 'Dashboard\DashboardController@index')->name('dashboard');
+
+Route::prefix('dashboard')->name('dashboard.')->group(function() {
+    Route::get('/', 'Dashboard\DashboardController@index')->name('index');
+
+    Route::resource('admins', 'Dashboard\AdminController')
+        ->except(['show', 'edit', 'update'])
+        ->middleware('can:is-head-admin');
+});
 
 Auth::routes([
     'confirm' => false,
